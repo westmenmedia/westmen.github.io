@@ -1,0 +1,103 @@
+label,
+.form-text {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fcf8f8 !important;
+    /* Adjust the color to your preference */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('/westmenmedia/png/newloginbg.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin: 0 auto;
+    height: 130vh;
+
+    /* Rest of your styles */
+}
+
+form {
+    display: none;
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: #414241;
+    padding: 40px;
+    border: 1px solid #000000;
+    /* Added black 3order */
+    border-radius: 13px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Add a container for the buttons and center them */
+.button-container {
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   height: 10%;
+   margin-top: 5px; /* Adjust the margin as needed for spacing */
+}
+
+button {
+   background-color: #727572;
+   color: #fff;
+   padding: 10px 20px !important; /* Increased padding for a larger size */
+   border: none;
+   border-radius: 13px !important;
+   cursor: pointer;
+   font-size: 16px;
+   transition: background-color 0.3s ease;
+   margin: 0 10px !important; /* Add margin to separate the buttons horizontally */
+}
+
+
+
+
+button:hover {
+    background-color: #676967;
+}
+
+/* Styles for the navbar */
+nav {
+    background-color: #343a40;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav button {
+    margin-right: 1rem;
+}

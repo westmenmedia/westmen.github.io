@@ -1,0 +1,143 @@
+/* Updated style.css */
+
+/* Add some basic styling for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.475);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Style the close button */
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style the text in the modal */
+.modal-content p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Style the links inside the modal */
+.modal-content a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #727572;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid #727572;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.modal-content a:hover {
+    background-color: #727572;
+    border: 5px solid #727572;
+}
+
+/* Additional styles for the new components */
+.feature-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Set up a vertical flex container for the carousel */
+.vertical-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* Adjust the width and height of the carousel inner container */
+.carousel-inner {
+    max-width: 450px;
+    height: 590px;
+    margin: -10px 900px 0 0; /* Adjust margin for left positioning */
+    overflow: hidden;
+    padding: auto;
+}
+
+
+/* Adjust the width and height of each carousel item */
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%) scale(0.9); /* Initial position to the right with slight scaling */
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+/* Customize the active item styling */
+.carousel-inner .carousel-item.active {
+    opacity: 1;
+    transform: translateX(0) scale(1); /* Move to the center with original scale */
+    border-radius: 60px; /* Rounded corners during transition */
+}
+
+/* Smoother transition for the next slide */
+.carousel-inner .carousel-item.next {
+    transform: translateX(0) scale(1.1); /* Move to the center and apply scaling for the next slide */
+}
+
+/* Ensure images within carousel items take up the full width and maintain aspect ratio */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 60px; /* Rounded corners */
+}
+
+/* Set the first item to be visible */
+.carousel-item.active {
+    opacity: 1;
+    border-radius: 60px; /* Rounded corners during transition */
+    border: 10px solid #ffffff; /* Additional styling for the active item */
+}
+.text-container {
+    /* Remove width and padding to make it free */
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    /* New styling for positioning */
+    position: absolute;
+    top: 20%; /* Adjust the top position */
+    right: 17%; /* Adjust the right position */
+    transform: translate(0%, -50%); /* Center vertically */
+    font-size: 35px;
+}

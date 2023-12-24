@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/westmenmedia/html/categories/categorystyle.css">
+    <title>DIY and Design Influencers</title>
+</head>
+<body>
+
+   <!-- Include the navbar -->
+   <div id="navbar-container">
+    <!-- Include the navbar using JavaScript -->
+    <script>
+        document.write('<div id="navbar"></div>');
+        fetch('/westmenmedia/html/new_navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+</div> <!-- Corrected the closing div tag -->
+
+    <ul class="influencer-list">
+        <li class="influencer-card">
+            <img class="influencer-img" src="influencer1.jpg" alt="Influencer 1">
+            <h3>Influencer 1</h3>
+            <p>Followers: 500k</p>
+        </li>
+
+        <li class="influencer-card">
+            <img class="influencer-img" src="influencer2.jpg" alt="Influencer 2">
+            <h3>Influencer 2</h3>
+            <p>Followers: 800k</p>
+        </li>
+
+        <!-- Add more influencers as needed -->
+
+    </ul>
+
+</body>
+</westmenmedia/html>

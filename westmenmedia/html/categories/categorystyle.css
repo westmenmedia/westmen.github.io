@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.influencer-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.influencer-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.influencer-img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.influencer-card:hover .influencer-img {
+    transform: scale(1.1);
+}
+
+.influencer-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;  /* Set text color to white */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.influencer-card:hover .influencer-details {
+    opacity: 1;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #fff; /* Set heading color to white */
+}
+
+p {
+    margin: 0;
+    color: #fff; /* Set paragraph color to white */
+}
